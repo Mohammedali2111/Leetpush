@@ -5,7 +5,7 @@ class Solution:
         graph = [[] for _ in range(n)]
         for u, v in edges:
             graph[u].append(v)
-            graph[v].append(u)   # undirected, so add the reverse edge too
+            graph[v].append(u)   
         visited = {source}
         queue = deque([source])
         while queue:
